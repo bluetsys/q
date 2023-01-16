@@ -9,3 +9,9 @@ $$
           + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
           + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k}
 $$
+
+```
+wget https://cdn.geekbench.com/Geekbench-5.4.6-Linux.tar.gz
+tar xf Geekbench-5.4.6-Linux.tar.gz
+cd Geekbench-5.4.6-Linux/
+./geekbench5
