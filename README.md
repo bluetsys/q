@@ -15,3 +15,13 @@ wget https://cdn.geekbench.com/Geekbench-5.4.6-Linux.tar.gz
 tar xf Geekbench-5.4.6-Linux.tar.gz
 cd Geekbench-5.4.6-Linux/
 ./geekbench5
+
+
+
+```
+sudo wget https://dot.net/v1/dotnet-install.sh
+sudo chmod u+x ./dotnet-install.sh
+sudo ./dotnet-install.sh -Channel 7.0 -Version latest
+sudo cp -r $HOME/.dotnet/. /usr/lib/dotnet/.
+sudo rm -rf $HOME/.dotnet
+```
