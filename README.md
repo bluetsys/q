@@ -24,7 +24,10 @@ sudo chmod u+x ./dotnet-install.sh
 sudo ./dotnet-install.sh -Channel 7.0 -Version latest
 sudo cp -r $HOME/.dotnet/. /usr/lib/dotnet/.
 sudo rm -rf $HOME/.dotnet
+```
 
+```
+sudo ./dotnet-install.sh -Channel 7.0 -Version latest
 sudo ./dotnet-install.sh -Channel 6.0 -Version latest
 sudo ./dotnet-install.sh -Channel 5.0 -Version latest
 sudo ./dotnet-install.sh -Channel 3.1 -Version latest
