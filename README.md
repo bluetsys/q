@@ -17,7 +17,6 @@ cd Geekbench-5.4.6-Linux/
 ./geekbench5
 ```
 
-
 ```
 sudo wget https://dot.net/v1/dotnet-install.sh
 sudo chmod u+x ./dotnet-install.sh
