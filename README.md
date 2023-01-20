@@ -45,6 +45,7 @@ dotnet --list-sdks
 dotnet --list-runtimes
 ```
 
+
 ```
 sudo apt install cockpit cockpit-pcp
 sudo nano /etc/netplan/01-netplan.yaml
