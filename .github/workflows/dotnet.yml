@@ -18,12 +18,24 @@ jobs:
     - uses: actions/checkout@v3
     - name: Restore
       run: dotnet restore
-    - name: Build
+    - name: Build win-x64
       #run: dotnet build --no-restore
       run: dotnet publish -c Release -r win-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build win-arm6
       run: dotnet publish -c Release -r win-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build linux-x64
       run: dotnet publish -c Release -r linux-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build linux-arm
       run: dotnet publish -c Release -r linux-arm -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build linux-arm64
       run: dotnet publish -c Release -r linux-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build osx-x64
       run: dotnet publish -c Release -r osx-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      
+    - name: Build osx-arm64
       run: dotnet publish -c Release -r osx-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
