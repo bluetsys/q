@@ -19,4 +19,11 @@ jobs:
     - name: Restore
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      #run: dotnet build --no-restore
+      run: dotnet publish -c Release -r win-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r win-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r linux-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r linux-arm -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r linux-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r osx-x64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
+      run: dotnet publish -c Release -r osx-arm64 -p:PublishTrimmed=true -p:PublishSingleFile=true -p:ReadyToRun=true -p:selfcontained=true
