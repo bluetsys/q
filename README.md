@@ -55,3 +55,7 @@ sudo nano /etc/netplan/01-netplan.yaml
 network:
   renderer: NetworkManager
 ```
+
+```
+sudo apt install neofetch
+```
