@@ -72,4 +72,12 @@ sudo apt install -y nodejs gcc nasm pypy ruby golang kotlin swift nasm scala fpc
 
 ```
 
+```
+sudo apt install speedtest-cli
+speedtest-cli
+
+wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
+code-server
+
+```
 
