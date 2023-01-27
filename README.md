@@ -76,7 +76,7 @@ sudo apt install -y nodejs gcc nasm pypy ruby golang kotlin swift nasm scala fpc
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.8/julia-1.8.5-linux-x86_64.tar.gz
 tar -xvzf julia-1.8.5-linux-x86_64.tar.gz
 sudo cp -r julia-1.8.5 /opt/
-sudo ln -s /opt/julia-1.8.3/bin/julia /usr/local/bin/julia
+sudo ln -s /opt/julia-1.8.5/bin/julia /usr/local/bin/julia
 ```
 
 ```
@@ -89,3 +89,6 @@ wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
 code-server
 ```
 
+```
+sudo hdparm -Tt /dev/sda
+```
