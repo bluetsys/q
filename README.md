@@ -92,3 +92,22 @@ code-server
 ```
 sudo hdparm -Tt /dev/sda
 ```
+
+```
+last -f /var/log/btmp
+last -f /var/log/wtmp
+```
+
+```
+curl -fsSL https://code-server.dev/install.sh | sh
+
+sudo ufw default deny
+sudo ufw allow from 125.143.140.168
+sudo ufw allow from 183.98.188.155
+sudo ufw allow from 106.243.241.171
+sudo ufw allow from 175.223.14.86
+
+sudo lsof -nP | grep LISTEN
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfW/Rlf8u6MBET8Zu4aPZIcpDzj2Q5NUt54DlZPYzcpNREsy009HGXnKVZCR5LKuHmF9EWCJcHQe2Ii093KRTKFhucbSrm3rLHO9mhVcnqzGbc9cdFNR/Or3Sw9D01cNaXH6v0AavIBSKguRdREaQ8IXcb3YcWK+A5OWchFu7MGQQhGoi4osP0lJx0Kbq5ZJxQLX4AqJRpEhygIZT8j5xhzg9fhywznQFJg5uIL72sGQDVmuP4irA2bRHqu68QvknSNmHfuEIvqKle7PimpQRRqukUgLlrZ0Pbarp28G37OOTt9TTRPYKOwnVOYDrfxdCDcuRZbsU4dQz+lkogWD7H ssh-key-2022-12-21
+```
