@@ -96,6 +96,8 @@ sudo hdparm -Tt /dev/sda
 ```
 last -f /var/log/btmp
 last -f /var/log/wtmp
+
+dpkg-reconfigure tzdata
 ```
 
 ```
