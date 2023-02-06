@@ -94,6 +94,7 @@ sudo hdparm -Tt /dev/sda
 ```
 
 ```
+cat /dev/null > /var/log/btmp
 last -f /var/log/btmp
 last -f /var/log/wtmp
 
