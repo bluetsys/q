@@ -11,10 +11,10 @@ $$
 $$
 
 ```
-wget https://cdn.geekbench.com/Geekbench-5.4.6-Linux.tar.gz
-tar xf Geekbench-5.4.6-Linux.tar.gz
-cd Geekbench-5.4.6-Linux/
-./geekbench5
+wget https://cdn.geekbench.com/k9ea2vqm/Geekbench-6.0.0-Linux.tar.gz
+tar xf Geekbench-6.0.0-Linux.tar.gz
+cd Geekbench-6.0.0-Linux/
+./geekbench6
 ```
 
 ```
